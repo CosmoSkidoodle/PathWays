@@ -777,12 +777,12 @@ html {
 }
 
 body {
-  line-height: 1.2;
-  color: #666;
-  font-size: 15px;
-  font-family: "KoHo", sans-serif;
-  height: 100%;
-  overflow-x: hidden;
+    line-height: 1.2;
+    color: #000;
+    font-size: 15px;
+    font-family: "KoHo", sans-serif;
+    height: 100%;
+    overflow-x: hidden;
 }
 
 a {
@@ -1476,10 +1476,10 @@ p {
   padding-bottom: 0;
   color: #fff;
 }
-#mainContent .navbar .navbar-collapse .navbar-nav .nav-item a:hover {
-  background-color: inherit;
-  color: #666;
-}
+    #mainContent .navbar .navbar-collapse .navbar-nav .nav-item a:hover {
+        background-color: inherit;
+        color: #000;
+    }
 #mainContent .navbar .navbar-collapse .navbar-nav .nav-item a.dropdown-toggle {
   padding-top: 0;
   padding-bottom: 0;
@@ -2680,13 +2680,13 @@ p {
   background-color: #fafafa;
   padding: 80px 40px;
 }
-#content_full .latest-posts .subscr .part-title h4 {
-  line-height: 1.45;
-  font-weight: 400;
-  letter-spacing: 0;
-  font-size: 27px;
-  color: #666;
-}
+    #content_full .latest-posts .subscr .part-title h4 {
+        line-height: 1.45;
+        font-weight: 400;
+        letter-spacing: 0;
+        font-size: 27px;
+        color: #000;
+    }
 #content_full .latest-posts .subscr .part-f {
   height: 100%;
 }
@@ -4602,12 +4602,12 @@ body.single-post .footer_bottom.section-padding {
   #content_full #sidebar .sidbar_w .widget_area .widget_title {
     color: #000;
   }
-  #content_full #sidebar .sidbar_w .widget_area .about p {
-    color: #666;
-  }
-  #content_full #sidebar .sidbar_w .post_info p {
-    color: #666;
-  }
+    #content_full #sidebar .sidbar_w .widget_area .about p {
+        color: #000;
+    }
+    #content_full #sidebar .sidbar_w .post_info p {
+        color: #000;
+    }
   #content_full #sidebar .sidbar_w .post_info h5 {
     color: #151515;
   }
