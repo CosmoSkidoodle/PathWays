@@ -11,389 +11,390 @@
         body, h1, h2, h3, h4, h5, h6 {
             font-family: "Raleway", sans-serif
         }
+
         body {
             background-image: url(backGround.jpg);
         }
     </style>
-	
-	<script>
-		localStorage.setItem('global1', 'version1')
-	</script>
-	
+
+    <script>
+        localStorage.setItem('global1', 'version1')
+    </script>
+
 </head>
 
-    <body class="w3-light-grey w3-content" style="max-width: 1600px;">
+<body class="w3-light-grey w3-content" style="max-width: 1600px;">
 
-        <!-- Sidebar/menu -->
-        <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar">
-            <br>
-            <div class="w3-container" style="text-align: center;">
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar">
+        <br>
+        <div class="w3-container" style="text-align: center;">
 
-                <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
-                    <i class="fa fa-remove"></i>
-                </a>
+            <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+                <i class="fa fa-remove"></i>
+            </a>
 
-                <img src="img1.png" style="width:45%;" class="w3-round"><br><br>
+            <img src="img1.png" style="width:45%;" class="w3-round"><br><br>
 
-                <h4>Many Pathways</h4>
+            <h4>Many Pathways</h4>
 
-                <hr style="width: 50%; margin: 20px auto 20px auto;" />
+            <hr style="width: 50%; margin: 20px auto 20px auto;" />
 
-            </div>
-            <div class="w3-bar-block">
-                <table style="margin: auto;">
+        </div>
+        <div class="w3-bar-block">
+            <table style="margin: auto;">
+                <tr>
+                    <td>
+                        <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="w3-panel w3-large" style="text-align: center;">
+            <i class="fa fa-facebook-official w3-hover-opacity"></i>
+            <i class="fa fa-instagram w3-hover-opacity"></i>
+            <i class="fa fa-snapchat w3-hover-opacity"></i>
+            <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+            <i class="fa fa-twitter w3-hover-opacity"></i>
+            <i class="fa fa-linkedin w3-hover-opacity"></i>
+        </div>
+    </nav>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:300px">
+
+        <!-- Header -->
+        <header id="portfolio">
+            <a href="#"><img src="img1.png" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+            <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+            <div class="w3-container" style="letter-spacing: 1px; text-align: center;">
+
+                <table style="margin: auto; width: 680px; padding: 20px;">
                     <tr>
-                        <td>
-                            <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a>
+                        <td style="width: 239px; min-width: 239px;">
+                            <img src="Many_Pathways_Counseling2.png" alt="" style="height: 121px; width: 239px;">
+                        </td>
+                        <td style="width: 437px; min-width: 437px;">
+                            <img src="Welcome.png" alt="" style="height: 153px; width: 437px;">
                         </td>
                     </tr>
                     <tr>
-                        <td>
-                            <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
+                        <td colspan="2" style="font-size: 26px;">
+
+                            <br />Welcome to <b>Many Pathways Counseling</b>.
+                            <hr style=" width: 50%; margin: auto;" />
+                            <br />It takes courage to think about making changes.<br />We are glad you are here.
+                            <hr style=" width: 50%; margin: auto;" />
+                            <br />Please explore the website to see what we offer or<br />call 555-555-5555 to talk about making an appointment.
                         </td>
                     </tr>
                 </table>
-            </div>
-            <div class="w3-panel w3-large" style="text-align: center;">
-                <i class="fa fa-facebook-official w3-hover-opacity"></i>
-                <i class="fa fa-instagram w3-hover-opacity"></i>
-                <i class="fa fa-snapchat w3-hover-opacity"></i>
-                <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-                <i class="fa fa-twitter w3-hover-opacity"></i>
-                <i class="fa fa-linkedin w3-hover-opacity"></i>
-            </div>
-        </nav>
-
-        <!-- Overlay effect when opening sidebar on small screens -->
-        <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-
-        <!-- !PAGE CONTENT! -->
-        <div class="w3-main" style="margin-left:300px">
-
-            <!-- Header -->
-            <header id="portfolio">
-                <a href="#"><img src="img1.png" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
-                <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
-                <div class="w3-container" style="letter-spacing: 1px; text-align: center;">
-
-                    <table style="margin: auto; width: 680px; padding: 20px;">
-                        <tr>
-                            <td style="width: 239px; min-width: 239px;">
-                                <img src="Many_Pathways_Counseling2.png" alt="" style="height: 121px; width: 239px;">
-                            </td>
-                            <td style="width: 437px; min-width: 437px;">
-                                <img src="Welcome.png" alt="" style="height: 153px; width: 437px;">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="2" style="font-size: 26px;">
-
-                                <br />Welcome to <b>Many Pathways Counseling</b>.
-                                <hr style=" width: 50%; margin: auto;" />
-                                <br />It takes courage to think about making changes.<br />We are glad you are here.
-                                <hr style=" width: 50%; margin: auto;" />
-                                <br />Please explore the website to see what we offer or<br />call 555-555-5555 to talk about making an appointment.
-                            </td>
-                        </tr>
-                    </table>
-
-                </div>
-            </header>
-
-            <!-- First Photo Grid-->
-            <div style="margin: 20px;">
-                <div class="w3-container w3-white">
-                    <img src="img8.png" alt="Norway" style="float: left; margin: 20px 20px 0px 0px;" class="w1-hover-opacity">
-                    <p><b>Trauma</b></p>
-                    <p>
-                        Bad things happen.  If you are lucky and have enough support and resilience, you can get past it.  But it doesn’t always work out that way.  Trauma from a young age, repeated trauma or very severe trauma can be crippling.  It can interfere with your ability to cope with life in a healthy way.  It can cause people to develop unhealthy coping to make the pain go away such as drinking too much, using drugs, becoming emotionally numb, gambling, eating too much and many other problems.  Trauma damages your relationships, your work and your ability to enjoy life.
-                        <hr />
-                        Many people never get started addressing their trauma because they are afraid it will hurt too much.  You can first learn healthy coping skills.  When you are less overwhelmed, you can then decide if you want to address the trauma directly.  Therapy will go at the pace you decide.  You have the control about how deep and how fast.
-                    </p>
-                </div>
-            </div>
-
-            <div style="margin: 20px;">
-                <div class="w3-container w3-white">
-                    <img src="img4.png" alt="Norway" style="float: left; margin: 20px 20px 0px 0px;" class="w1-hover-opacity">
-                    <p><b>Depression</b></p>
-                    <p>
-                        Depression shows up in many ways.  Loss of pleasure in things that used to feel good.  Crying. Feeling hopeless and helpless.  Body aches.  Weight gain or loss.  Sleep too much or can’t sleep enough.  Feeling guilty.  Tired all the time.  Thinking about dying or being dead.  Sadness.
-                        <hr />
-                        Let’s heal what hurts.  Call for an appointment whether its with me or someone else.  You don’t have to feel this bad.
-                    </p>
-                </div>
-            </div>
-
-            <div style="margin: 20px;">
-                <div class="w3-container w3-white" style="padding-bottom: 20px;">
-                    <img src="img11.jpg" style="float: left; width: 286px; margin: 20px;">
-                    <p><b>Anxiety</b></p>
-
-                    <p>
-                        Everyone has some anxiety.  For some people, it can be the main focus of life.  Constant fear about when the next panic attack might strike.  Not being able to stop worrying about things that may never happen.  Racing thoughts.  Trying all sorts of things to reduce the discomfort.  Repeating behaviors if they help even a little.
-                        <hr />
-                        There are many techniques and coping skills you can learn.  You can learn to think in new ways that will reduce rather than increase your anxiety.  Not everyone likes to meditate and that’s okay.  We will find what works best for you.
-                        <hr />
-                    </p>
-
-                    <table style="width: 100%;">
-                        <tr style="vertical-align: top;">
-                            <td style="width: 50%;">
-                                <b>What to do right now</b><br />
-                                <br />
-                                Coping with overwhelming feelings
-                                <br />
-                                You can do this alone or have someone read to you.<br />
-                                <br />
-                                Name five things in the room that are blue.<br />
-                                Name five things in the room that are green.<br />
-                                Name five things in the room that are red.<br />
-                            </td>
-                            <td style="width: 20px;">
-                            </td>
-                            <td>
-                                Are you calmer?<br />
-                                <br />
-                                Look at the list of healthy ways to cope to distract yourself.<br />
-                                Only do things that help both in the short and long term.  Do not choose anything that has potential negative results for you.<br />
-                            </td>
-                        </tr>
-                    </table>
-                    <br />
-                    <b>Healthy Ways to Cope</b><br />
-
-                    • Go for a walk.
-                    • Eat a piece of fruit
-                    • Write down five good things in your life
-                    • Sing with a favorite song
-                    • Color
-                    • Pet an animal
-                    • Draw a silly face
-                    • Play with a child
-                    • Hug someone
-                    • Play with a kitten or puppy
-                    • Take a warm bath
-                    • Stretch
-                    • Compliment someone
-                    • Read a book
-                    • Put away one thing
-                    • Call a positive friend
-                    • Name one thing you like about yourself
-                    • Bake or cook
-                    • Watch a comedy
-                    • Go to the library
-                    • Sit in the sunshine
-                    • Listen for a bird call
-                    • Put on your favorite perfume
-                    • Smell the spices in your cabinet
-                    • Use some lotion
-                    • Do something nice for someone
-                    • Write a card to someone you care about
-                    • Dance
-                    • Do some yoga
-                    • Watch a cartoon
-                    • Do a craft project
-                </div>
-            </div>
-
-
-            <!-- Second Photo Grid-->
-            <div class="w3-row-padding">
-                <div class="w3-third w3-container w3-margin-bottom">
-                    <img src="img5.png" alt="Norway" style="width:100%" class="w3-hover-opacity">
-                    <div class="w3-container w3-white">
-                        <p><b>Courage</b></p>
-                        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-                    </div>
-                </div>
-                <div class="w3-third w3-container w3-margin-bottom">
-                    <img src="img6.png" alt="Norway" style="width:100%" class="w3-hover-opacity">
-                    <div class="w3-container w3-white">
-                        <p><b>Guidance</b></p>
-                        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-                    </div>
-                </div>
-                <div class="w3-third w3-container">
-                    <img src="img7.png" alt="Norway" style="width:100%" class="w3-hover-opacity">
-                    <div class="w3-container w3-white">
-                        <p><b>Change</b></p>
-                        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Pagination -->
-            <div class="w3-center w3-padding-32">
-                <div class="w3-bar">
-                    <a href="#" class="w3-bar-item w3-button w3-hover-black"><</a>
-                    <a href="#" class="w3-bar-item w3-black w3-button">1</a>
-                    <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
-                    <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
-                    <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
-                    <a href="#" class="w3-bar-item w3-button w3-hover-black">></a>
-                </div>
-            </div>
-
-            <!-- Images of Me -->
-            <div class="w3-row-padding w3-padding-16" id="about">
-                <div class="w3-col m6">
-                    <img src="img2.png" alt="Me" style="width:100%">
-                </div>
-                <div class="w3-col m6">
-                    <img src="img9.png" alt="Me" style="width:100%">
-                </div>
-            </div>
-
-            <div class="w3-container w3-padding-large" style="margin-bottom:32px">
-                <h4><b>About Me</b></h4>
-                <p>Hello.  My name is G•••••••.  My passion as a therapist is assisting people find the best way for them to heal.  I strongly believe that therapy needs to be tailored to the person seeking healing.  That is why I chose the name “Many Pathways” for my practice.  I see myself as a teacher and guide.  I have been a therapist for over 30 years.  I have worked with a wide variety of issues and people.   I have had extensive training in many techniques and approaches.  My experience and training allows me to offer many choices for healing.  Tell me where you want to go and I will help you find your way there.</p>
-                <hr>
-
-                <h4><b>Credentials</b></h4>
-                <p>I have my Master’s Degree in Clinical Psychology.  I am a licensed clinical professional counselor.  I am a certified Alcohol and Other Drug counselor.  I have a Gender Competency Endorsement which means I have specialized training in women’s treatment.  I have taught at two colleges and one university.  I have taken the needed training to become a trauma specialist and a gambling addiction counselor but didn’t take the certification tests.</p>
 
             </div>
+        </header>
 
-            <div class="w3-center w3-padding-32">
-
-                <h4>Offering</h4>
-                <!-- Pricing Tables -->
-                <div class="w3-row-padding" style="margin:0 -16px">
-                    <div class="w3-third w3-margin-bottom">
-                        <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
-                            <li class="w3-black w3-xlarge w3-padding-32">Treatments</li>
-                            <li class="w3-padding-16">Neque viverra justo</li>
-                            <li class="w3-padding-16">Dui sapien eget mi</li>
-                            <li class="w3-padding-16">Nec ultrices</li>
-                            <li class="w3-padding-16">Eget mi lorem</li>
-                            <li class="w3-padding-16">
-                                <h2>Insurance</h2>
-                                <span class="w3-opacity">Covered</span>
-                            </li>
-                            <li class="w3-light-grey w3-padding-24">
-                                <button class="w3-button w3-teal w3-padding-large w3-hover-black">More Information</button>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="w3-third w3-margin-bottom">
-                        <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
-                            <li class="w3-teal w3-xlarge w3-padding-32">Amenities</li>
-                            <li class="w3-padding-16">Dui sapien eget mi</li>
-                            <li class="w3-padding-16">Nec ultrices</li>
-                            <li class="w3-padding-16">Neque viverra justo</li>
-                            <li class="w3-padding-16">Eget mi lorem</li>
-                            <li class="w3-padding-16">
-                                <h2>Covered By</h2>
-                                <span class="w3-opacity">Insurance</span>
-                            </li>
-                            <li class="w3-light-grey w3-padding-24">
-                                <button class="w3-button w3-teal w3-padding-large w3-hover-black">More Information</button>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="w3-third">
-                        <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
-                            <li class="w3-black w3-xlarge w3-padding-32">Support</li>
-                            <li class="w3-padding-16">Beer</li>
-                            <li class="w3-padding-16">Pizza</li>
-                            <li class="w3-padding-16">VR 360</li>
-                            <li class="w3-padding-16">Gamming</li>
-                            <li class="w3-padding-16">
-                                <h2>$ 50</h2>
-                                <span class="w3-opacity">One time charge</span>
-                            </li>
-                            <li class="w3-light-grey w3-padding-24">
-                                <button class="w3-button w3-teal w3-padding-large w3-hover-black">More Information</button>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+        <!-- First Photo Grid-->
+        <div style="margin: 20px;">
+            <div class="w3-container w3-white">
+                <img src="img8.png" alt="Norway" style="float: left; margin: 20px 20px 0px 0px;" class="w1-hover-opacity">
+                <p><b>Trauma</b></p>
+                <p>
+                    Bad things happen.  If you are lucky and have enough support and resilience, you can get past it.  But it doesn’t always work out that way.  Trauma from a young age, repeated trauma or very severe trauma can be crippling.  It can interfere with your ability to cope with life in a healthy way.  It can cause people to develop unhealthy coping to make the pain go away such as drinking too much, using drugs, becoming emotionally numb, gambling, eating too much and many other problems.  Trauma damages your relationships, your work and your ability to enjoy life.
+                    <hr />
+                    Many people never get started addressing their trauma because they are afraid it will hurt too much.  You can first learn healthy coping skills.  When you are less overwhelmed, you can then decide if you want to address the trauma directly.  Therapy will go at the pace you decide.  You have the control about how deep and how fast.
+                </p>
             </div>
-
-            <!-- Contact Section -->
-            <div class="w3-container w3-padding-large w3-grey">
-                <table style="width: 100%;"><tr><td><h4 id="contact"><b>Contact Me</b></h4></td><td><img src="thumb.jpg" style="float: right;" class="w3-round"></td></tr></table>
-                <div class="w3-row-padding w3-center w3-padding-24" style="margin:0 -16px">
-                    <div class="w3-third w3-dark-grey">
-                        <p><i class="fa fa-envelope w3-xxlarge w3-text-light-grey"></i></p>
-                        <p>pathWays@outlook.com</p>
-                    </div>
-                    <div class="w3-third w3-teal">
-                        <p><i class="fa fa-map-marker w3-xxlarge w3-text-light-grey"></i></p>
-                        <p>Illinois, US</p>
-                    </div>
-                    <div class="w3-third w3-dark-grey">
-                        <p><i class="fa fa-phone w3-xxlarge w3-text-light-grey"></i></p>
-                        <p>555.555.5555</p>
-                    </div>
-                </div>
-                <hr class="w3-opacity">
-
-            </div>
-
-            <!-- Footer -->
-            <footer class="w3-container w3-padding-32 w3-dark-grey">
-                <div class="w3-row-padding" style="letter-spacing: 1px;">
-                    <div class="w3-third">
-                        <h3>Accolades</h3>
-                        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-                        <p>Powered by awesomeness</p>
-                    </div>
-
-                    <div class="w3-third" style="text-align: center;">
-                        <h3>Locations Served</h3>
-                        <ul class="w3-ul w3-hoverable">
-                            <li class="w3-padding-16">
-                                <span class="w3-large">Greater Chicago Area</span>
-                            </li>
-                            <li class="w3-padding-16">
-                                <span class="w3-large">Northern Indiana</span>
-                            </li>
-                            <li class="w3-padding-16">
-                                <span class="w3-large">Southern Wisconsin</span>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="w3-third">
-                        <h3>What we do</h3>
-                        <p>
-                            <span class="w3-tag w3-grey w3-small w3-margin-bottom">Counseling</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Adiction</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Change</span>
-                            <span class="w3-tag w3-grey w3-small w3-margin-bottom">Therapy</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Recovery</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Guidance</span>
-                            <span class="w3-tag w3-grey w3-small w3-margin-bottom">Treatment</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Support</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Courage</span>
-                            <span class="w3-tag w3-grey w3-small w3-margin-bottom">Behavioral</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Anxiety</span>
-                            <span class="w3-tag w3-grey w3-small w3-margin-bottom">Mental</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Depression</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Trauma</span>
-                        </p>
-                    </div>
-
-                </div>
-            </footer>
-
-            <div class="w3-black w3-center w3-padding-24">Powered by <a href="#" title="Powered By" target="_blank" class="w3-hover-opacity"> Y o u</a></div>
-
-            <!-- End page content -->
         </div>
 
-        <script>
-            // Script to open and close sidebar
-            function w3_open() {
-                document.getElementById("mySidebar").style.display = "block";
-                document.getElementById("myOverlay").style.display = "block";
-            }
+        <div style="margin: 20px;">
+            <div class="w3-container w3-white">
+                <img src="img4.png" alt="Norway" style="float: left; margin: 20px 20px 0px 0px;" class="w1-hover-opacity">
+                <p><b>Depression</b></p>
+                <p>
+                    Depression shows up in many ways.  Loss of pleasure in things that used to feel good.  Crying. Feeling hopeless and helpless.  Body aches.  Weight gain or loss.  Sleep too much or can’t sleep enough.  Feeling guilty.  Tired all the time.  Thinking about dying or being dead.  Sadness.
+                    <hr />
+                    Let’s heal what hurts.  Call for an appointment whether its with me or someone else.  You don’t have to feel this bad.
+                </p>
+            </div>
+        </div>
 
-            function w3_close() {
-                document.getElementById("mySidebar").style.display = "none";
-                document.getElementById("myOverlay").style.display = "none";
-            }
-        </script>
+        <div style="margin: 20px;">
+            <div class="w3-container w3-white" style="padding-bottom: 20px;">
+                <img src="img11.jpg" style="float: left; width: 286px; margin: 20px;">
+                <p><b>Anxiety</b></p>
 
-    </body>
+                <p>
+                    Everyone has some anxiety.  For some people, it can be the main focus of life.  Constant fear about when the next panic attack might strike.  Not being able to stop worrying about things that may never happen.  Racing thoughts.  Trying all sorts of things to reduce the discomfort.  Repeating behaviors if they help even a little.
+                    <hr />
+                    There are many techniques and coping skills you can learn.  You can learn to think in new ways that will reduce rather than increase your anxiety.  Not everyone likes to meditate and that’s okay.  We will find what works best for you.
+                    <hr />
+                </p>
+
+                <table style="width: 100%;">
+                    <tr style="vertical-align: top;">
+                        <td style="width: 50%;">
+                            <b>What to do right now</b><br />
+                            <br />
+                            Coping with overwhelming feelings
+                            <br />
+                            You can do this alone or have someone read to you.<br />
+                            <br />
+                            Name five things in the room that are blue.<br />
+                            Name five things in the room that are green.<br />
+                            Name five things in the room that are red.<br />
+                        </td>
+                        <td style="width: 20px;">
+                        </td>
+                        <td>
+                            Are you calmer?<br />
+                            <br />
+                            Look at the list of healthy ways to cope to distract yourself.<br />
+                            Only do things that help both in the short and long term.  Do not choose anything that has potential negative results for you.<br />
+                        </td>
+                    </tr>
+                </table>
+                <br />
+                <b>Healthy Ways to Cope</b><br />
+
+                • Go for a walk.
+                • Eat a piece of fruit
+                • Write down five good things in your life
+                • Sing with a favorite song
+                • Color
+                • Pet an animal
+                • Draw a silly face
+                • Play with a child
+                • Hug someone
+                • Play with a kitten or puppy
+                • Take a warm bath
+                • Stretch
+                • Compliment someone
+                • Read a book
+                • Put away one thing
+                • Call a positive friend
+                • Name one thing you like about yourself
+                • Bake or cook
+                • Watch a comedy
+                • Go to the library
+                • Sit in the sunshine
+                • Listen for a bird call
+                • Put on your favorite perfume
+                • Smell the spices in your cabinet
+                • Use some lotion
+                • Do something nice for someone
+                • Write a card to someone you care about
+                • Dance
+                • Do some yoga
+                • Watch a cartoon
+                • Do a craft project
+            </div>
+        </div>
+
+
+        <!-- Second Photo Grid-->
+        <div class="w3-row-padding">
+            <div class="w3-third w3-container w3-margin-bottom">
+                <img src="img5.png" alt="Norway" style="width:100%" class="w3-hover-opacity">
+                <div class="w3-container w3-white">
+                    <p><b>Courage</b></p>
+                    <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+                </div>
+            </div>
+            <div class="w3-third w3-container w3-margin-bottom">
+                <img src="img6.png" alt="Norway" style="width:100%" class="w3-hover-opacity">
+                <div class="w3-container w3-white">
+                    <p><b>Guidance</b></p>
+                    <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+                </div>
+            </div>
+            <div class="w3-third w3-container">
+                <img src="img7.png" alt="Norway" style="width:100%" class="w3-hover-opacity">
+                <div class="w3-container w3-white">
+                    <p><b>Change</b></p>
+                    <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pagination -->
+        <div class="w3-center w3-padding-32">
+            <div class="w3-bar">
+                <a href="#" class="w3-bar-item w3-button w3-hover-black"><</a>
+                <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+                <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+                <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+                <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+                <a href="#" class="w3-bar-item w3-button w3-hover-black">></a>
+            </div>
+        </div>
+
+        <!-- Images of Me -->
+        <div class="w3-row-padding w3-padding-16" id="about">
+            <div class="w3-col m6">
+                <img src="img2.png" alt="Me" style="width:100%">
+            </div>
+            <div class="w3-col m6">
+                <img src="img9.png" alt="Me" style="width:100%">
+            </div>
+        </div>
+
+        <div class="w3-container w3-padding-large" style="margin-bottom:32px">
+            <h4><b>About Me</b></h4>
+            <p>Hello.  My name is G•••••••.  My passion as a therapist is assisting people find the best way for them to heal.  I strongly believe that therapy needs to be tailored to the person seeking healing.  That is why I chose the name “Many Pathways” for my practice.  I see myself as a teacher and guide.  I have been a therapist for over 30 years.  I have worked with a wide variety of issues and people.   I have had extensive training in many techniques and approaches.  My experience and training allows me to offer many choices for healing.  Tell me where you want to go and I will help you find your way there.</p>
+            <hr>
+
+            <h4><b>Credentials</b></h4>
+            <p>I have my Master’s Degree in Clinical Psychology.  I am a licensed clinical professional counselor.  I am a certified Alcohol and Other Drug counselor.  I have a Gender Competency Endorsement which means I have specialized training in women’s treatment.  I have taught at two colleges and one university.  I have taken the needed training to become a trauma specialist and a gambling addiction counselor but didn’t take the certification tests.</p>
+
+        </div>
+
+        <div class="w3-center w3-padding-32">
+
+            <h4>Offering</h4>
+            <!-- Pricing Tables -->
+            <div class="w3-row-padding" style="margin:0 -16px">
+                <div class="w3-third w3-margin-bottom">
+                    <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
+                        <li class="w3-black w3-xlarge w3-padding-32">Treatments</li>
+                        <li class="w3-padding-16">Neque viverra justo</li>
+                        <li class="w3-padding-16">Dui sapien eget mi</li>
+                        <li class="w3-padding-16">Nec ultrices</li>
+                        <li class="w3-padding-16">Eget mi lorem</li>
+                        <li class="w3-padding-16">
+                            <h2>Insurance</h2>
+                            <span class="w3-opacity">Covered</span>
+                        </li>
+                        <li class="w3-light-grey w3-padding-24">
+                            <button class="w3-button w3-teal w3-padding-large w3-hover-black">More Information</button>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="w3-third w3-margin-bottom">
+                    <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
+                        <li class="w3-teal w3-xlarge w3-padding-32">Amenities</li>
+                        <li class="w3-padding-16">Dui sapien eget mi</li>
+                        <li class="w3-padding-16">Nec ultrices</li>
+                        <li class="w3-padding-16">Neque viverra justo</li>
+                        <li class="w3-padding-16">Eget mi lorem</li>
+                        <li class="w3-padding-16">
+                            <h2>Covered By</h2>
+                            <span class="w3-opacity">Insurance</span>
+                        </li>
+                        <li class="w3-light-grey w3-padding-24">
+                            <button class="w3-button w3-teal w3-padding-large w3-hover-black">More Information</button>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="w3-third">
+                    <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
+                        <li class="w3-black w3-xlarge w3-padding-32">Support</li>
+                        <li class="w3-padding-16">Beer</li>
+                        <li class="w3-padding-16">Pizza</li>
+                        <li class="w3-padding-16">VR 360</li>
+                        <li class="w3-padding-16">Gamming</li>
+                        <li class="w3-padding-16">
+                            <h2>$ 50</h2>
+                            <span class="w3-opacity">One time charge</span>
+                        </li>
+                        <li class="w3-light-grey w3-padding-24">
+                            <button class="w3-button w3-teal w3-padding-large w3-hover-black">More Information</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="w3-container w3-padding-large w3-grey">
+            <table style="width: 100%;"><tr><td><h4 id="contact"><b>Contact Me</b></h4></td><td><img src="thumb.jpg" style="float: right;" class="w3-round"></td></tr></table>
+            <div class="w3-row-padding w3-center w3-padding-24" style="margin:0 -16px">
+                <div class="w3-third w3-dark-grey">
+                    <p><i class="fa fa-envelope w3-xxlarge w3-text-light-grey"></i></p>
+                    <p>pathWays@outlook.com</p>
+                </div>
+                <div class="w3-third w3-teal">
+                    <p><i class="fa fa-map-marker w3-xxlarge w3-text-light-grey"></i></p>
+                    <p>Illinois, US</p>
+                </div>
+                <div class="w3-third w3-dark-grey">
+                    <p><i class="fa fa-phone w3-xxlarge w3-text-light-grey"></i></p>
+                    <p>555.555.5555</p>
+                </div>
+            </div>
+            <hr class="w3-opacity">
+
+        </div>
+
+        <!-- Footer -->
+        <footer class="w3-container w3-padding-32 w3-dark-grey">
+            <div class="w3-row-padding" style="letter-spacing: 1px;">
+                <div class="w3-third">
+                    <h3>Accolades</h3>
+                    <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+                    <p>Powered by awesomeness</p>
+                </div>
+
+                <div class="w3-third" style="text-align: center;">
+                    <h3>Locations Served</h3>
+                    <ul class="w3-ul w3-hoverable">
+                        <li class="w3-padding-16">
+                            <span class="w3-large">Greater Chicago Area</span>
+                        </li>
+                        <li class="w3-padding-16">
+                            <span class="w3-large">Northern Indiana</span>
+                        </li>
+                        <li class="w3-padding-16">
+                            <span class="w3-large">Southern Wisconsin</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="w3-third">
+                    <h3>What we do</h3>
+                    <p>
+                        <span class="w3-tag w3-grey w3-small w3-margin-bottom">Counseling</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Adiction</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Change</span>
+                        <span class="w3-tag w3-grey w3-small w3-margin-bottom">Therapy</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Recovery</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Guidance</span>
+                        <span class="w3-tag w3-grey w3-small w3-margin-bottom">Treatment</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Support</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Courage</span>
+                        <span class="w3-tag w3-grey w3-small w3-margin-bottom">Behavioral</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Anxiety</span>
+                        <span class="w3-tag w3-grey w3-small w3-margin-bottom">Mental</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Depression</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Trauma</span>
+                    </p>
+                </div>
+
+            </div>
+        </footer>
+
+        <div class="w3-black w3-center w3-padding-24">Powered by <a href="#" title="Powered By" target="_blank" class="w3-hover-opacity"> Y o u</a></div>
+
+        <!-- End page content -->
+    </div>
+
+    <script>
+        // Script to open and close sidebar
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
+    </script>
+
+</body>
 </html>
