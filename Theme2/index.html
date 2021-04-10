@@ -69,11 +69,11 @@
         }
 
         var f = 0;
-        var fonts = ['Arial', 'Times New Roman', 'Helvetica', 'Times', 'Verdana', 'Courier', 'Arial Narrow', 'Candara', 'Geneva', 'Calibri', 'Optima', 'Cambria', 'Garamond', 'Perpetua', 'Brush Script MT', 'Lucida Bright', 'Comic San']
+        var fonts = ['Arial', 'Calibri light', 'Calibri', 'Times New Roman', 'Helvetica', 'Times', 'Verdana', 'Courier', 'Arial Narrow', 'Candara', 'Geneva', 'Optima', 'Cambria', 'Garamond', 'Perpetua', 'Brush Script MT', 'Lucida Bright', 'Comic San']
         function ChangeFont() {
-            f = f + 1
             document.getElementById("theBody").style.fontFamily = fonts[f]
             document.getElementById("aAnxiety").innerHTML = f
+            f = f + 1
         }
     </script>
 </head>
@@ -82,7 +82,7 @@
 
     <!-- Primary Page Layout
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <div class="container">
+    <div class="container" >
 
         <section class="header" style="margin-top: 40px;">
             <img src="images/Many_Pathways_Counseling2.png" alt="" style="height: 152px; width: 179px; ">
@@ -100,7 +100,7 @@
 
 
         <nav class="navbar">
-            <div class="container" style="text-align: center;">
+            <div class="container" style="text-align: center; ">
                 <ul class="navbar-list" style="display: inline-block;">
                     <li class="navbar-item"><a id="aTrauma" class="button" onclick="ChangeBg()" style="margin: 12px;">Trauma</a></li>
                     <li class="navbar-item"><a id="aAnxiety" class="button" onclick="ChangeFont()" style="margin: 12px;">Anxiety</a></li>
