@@ -67,6 +67,14 @@
             document.getElementById("theBody").style.backgroundImage = "url('images/bak" + i + ".jpg')"
             document.getElementById("aTrauma").innerHTML = i
         }
+
+        var f = 0;
+        var fonts = ['Arial', 'Times New Roman', 'Helvetica', 'Times', 'Verdana', 'Courier', 'Arial Narrow', 'Candara', 'Geneva', 'Calibri', 'Optima', 'Cambria', 'Garamond', 'Perpetua', 'Brush Script MT', 'Lucida Bright', 'Comic San']
+        function ChangeFont() {
+            f = f + 1
+            document.getElementById("theBody").style.fontFamily = fonts[f]
+            document.getElementById("aAnxiety").innerHTML = f
+        }
     </script>
 </head>
 
@@ -95,9 +103,9 @@
             <div class="container" style="text-align: center;">
                 <ul class="navbar-list" style="display: inline-block;">
                     <li class="navbar-item"><a id="aTrauma" class="button" onclick="ChangeBg()" style="margin: 12px;">Trauma</a></li>
-                    <li class="navbar-item"><a class="button" onclick="ChangeBg()" style="margin: 12px;">Anxiety</a></li>
+                    <li class="navbar-item"><a id="aAnxiety" class="button" onclick="ChangeFont()" style="margin: 12px;">Anxiety</a></li>
                     <li class="navbar-item"><a class="button" onclick="ChangeBg()" style="margin: 12px;">Depression</a></li>
-                    <li class="navbar-item"><a class="button" onclick="ChangeBg()" style="margin: 12px;">Addiction</a></li>
+                    <li class="navbar-item"><a id="aAddiction" class="button" onclick="ChangeBg()" style="margin: 12px;">Addiction</a></li>
                     <li class="navbar-item">
                         <a class="button" href="#" data-popover="#codeNavPopover" style="margin: 12px;">Referrals</a>
                         <div id="codeNavPopover" class="popover">
