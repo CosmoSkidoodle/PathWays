@@ -69,9 +69,11 @@ $(document).ready(function () {
     function onScroll() {
         if (navOffsetTop < $window.scrollTop() && !$body.hasClass('has-docked-nav')) {
             $body.addClass('has-docked-nav')
+            ShowLogo()
         }
         if (navOffsetTop > $window.scrollTop() && $body.hasClass('has-docked-nav')) {
             $body.removeClass('has-docked-nav')
+            HideLogo()
         }
     }
 
