@@ -5,7 +5,7 @@
     <!-- Basic Page Needs
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <meta charset="utf-8">
-    <title>PathWay</title>
+    <title>PathWays</title>
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -70,13 +70,13 @@
         }
 
         #smallName {
-            padding-right: 10px;
+            padding: 2px;
             float: right;
             text-align: center;
         }
 
         #smallLogo {
-            padding-left: 10px;
+            padding-left: 5px;
             float: left;
         }
 
@@ -88,6 +88,27 @@
             i = i + 1
             document.getElementById("theBody").style.backgroundImage = "url('images/bak" + i + ".jpg')"
             document.getElementById("aTrauma").innerHTML = i
+        }
+
+        var l = 1;
+        function ChangeLogo() {
+            l = l + 1
+            document.getElementById("smallLogo1").style.display = 'none'
+            document.getElementById("smallLogo2").style.display = 'none'
+            document.getElementById("smallLogo3").style.display = 'none'
+            document.getElementById("smallLogo4").style.display = 'none'
+            document.getElementById("smallLogo5").style.display = 'none'
+            document.getElementById("smallLogoText0").style.display = 'none'
+            document.getElementById("smallLogoText1").style.display = 'none'
+            document.getElementById("smallLogoText2").style.display = 'none'
+            document.getElementById("smallLogoText3").style.display = 'none'
+            document.getElementById("smallLogoText4").style.display = 'none'
+            document.getElementById("smallLogoText5").style.display = 'none'
+
+            document.getElementById("smallLogo" + l).style.display = 'inline-block'
+            document.getElementById("smallLogoText" + l).style.display = 'inline-block'
+
+            document.getElementById("aAddiction").innerHTML = l
         }
 
         var f = 0;
@@ -147,11 +168,22 @@
         <nav class="navbar">
             
             <div id="smallLogo" style="display: none;">
-                <img src="images/Many_Pathways_Counseling2.png" alt="" style="height: 84px; width: 94px; ">
+                <img id="smallLogo1" src="images/Many_Pathways_Counseling2.png" alt="" style="height: 84px;">
+                <img id="smallLogo2" src="images/Counseling1.png" alt="" style="height: 63px; margin: 1px 0px 0px 0px; display:none" />
+                <img id="smallLogo3" src="images/Counseling2.png" alt="" style="height: 63px; margin: 2px 0px 0px 2px; display:none;" />
+                <img id="smallLogo4" src="images/Counseling3.png" alt="" style="height: 63px; margin: 2px 0px 0px 2px; display:none;" />
+                <img id="smallLogo5" src="images/Counseling4.png" alt="" style="height: 63px; margin: 7px 0px 0px 2px; display:none;" />
+                <div id="smallLogoText0" style="text-align: center; margin-top: -25px;">Many<br />Pathways<br />Counseling</div>
             </div>
-            <div id="smallName" style="display: none;">
-                Many Pathways Counseling<br />
-                555-555-5555
+
+            <div id="smallName" style="display: none; padding-right: 5px;">
+                <div id="smallLogoText1" style="text-align: center; ">Ivana NewCar<br />555.555.5555</div>
+                <div id="smallLogoText2" style="text-align: center; display:none;line-height: 1.2;"><a href="mailto:callMyTherapist@mail.com">Send Email</a><br />555.555.5555<br />Ivana NewCar </div>
+                <div id="smallLogoText3" style="text-align: center; display:none;">(555)555-5555<br />Ivana NewCar</div>
+                <div id="smallLogoText4" style="text-align: center; display:none;">555.555.5555<br /><a href="mailto:callMyTherapist@mail.com" style="font-size: 10px;">mailto:callMyTherapist@mail.com</a></div>
+                <div id="smallLogoText5" style="text-align: center; display:none;">
+                    <img id="smallLogo5" src="images/Counseling_number4.png" alt="" style="height: 63px; margin: 7px 0px 0px 2px;" />
+                </div>
             </div>
 
             <div class="container" style="text-align: center; ">
@@ -159,7 +191,7 @@
                     <li class="navbar-item"><a id="aTrauma" class="button" onclick="ChangeBg()" style="margin: 12px;">Trauma</a></li>
                     <li class="navbar-item"><a id="aAnxiety" class="button" onclick="ChangeFont()" style="margin: 12px;">Anxiety</a></li>
                     <li class="navbar-item"><a class="button" onclick="ChangeBg()" style="margin: 12px;">Depression</a></li>
-                    <li class="navbar-item"><a id="aAddiction" class="button" onclick="ChangeBg()" style="margin: 12px;">Addiction</a></li>
+                    <li class="navbar-item"><a id="aAddiction" class="button" onclick="ChangeLogo()" style="margin: 12px;">Addiction</a></li>
                     <li class="navbar-item" style="display: none;">
                         <a class="button" href="#" data-popover="#codeNavPopover" style="margin: 12px;">Referrals</a>
                         <div id="codeNavPopover" class="popover">
