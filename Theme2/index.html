@@ -131,11 +131,13 @@
         }
 
         function HideLogo() {
+            document.getElementById("theNavBar").style.display = 'none'
             document.getElementById("smallLogo").style.display = 'none'
             document.getElementById("smallName").style.display = 'none'
         }
 
         function ShowLogo() {
+            document.getElementById("theNavBar").style.display = 'inline-block'
             document.getElementById("smallLogo").style.display = 'inline-block'
             document.getElementById("smallName").style.display = 'inline-block'
         }
@@ -175,7 +177,7 @@
         </section>
 
 
-        <nav class="navbar">
+        <nav class="navbar" id="theNavBar">
 
             <div id="smallLogo" style="display: none;">
                 <img id="smallLogo1" src="images/Many_Pathways_Counseling2.png" alt="" style="height: 84px; display:none;">
