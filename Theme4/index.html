@@ -144,8 +144,6 @@
         }
 
         function SendMessage(obj) {
-            debugger
-            obj.disabled = 'true';
 
             var contactName = document.getElementById("inpContactName").value;
             var eEmail = document.getElementById("inpEmail").value;
@@ -172,7 +170,7 @@
             oReq.send();
 
             alert('Message Sent');
-            obj.disabled = 'false';
+
         }
 
         function ReplaceAll(string, search, replace) {
