@@ -143,6 +143,41 @@
             document.getElementById("divEndOfPage").scrollIntoView();
         }
 
+        function SendMessage(obj) {
+            
+            obj.disabled = 'true';
+
+            var contactName = document.getElementById("inpContactName").value;
+            var eEmail = document.getElementById("inpEmail").value;
+            var message = document.getElementById("inpMessage").value ;
+
+            contactName = ReplaceAll(contactName, '?', '.')
+            eEmail = ReplaceAll(eEmail, '?', '.')
+            message = ReplaceAll(message, '?', '.')
+
+            contactName = ReplaceAll(contactName, '&', '.')
+            eEmail = ReplaceAll(eEmail, '&', '.')
+            message = ReplaceAll(message, '&', '.')
+
+            contactName = ReplaceAll(contactName, ';', '.')
+            eEmail = ReplaceAll(eEmail , ';', '.')
+            message = ReplaceAll(message, ';', '.')
+
+            document.getElementById("inpContactName").value = '';
+            document.getElementById("inpEmail").value = '';
+            document.getElementById("inpMessage").value = '';
+
+            var oReq = new XMLHttpRequest();
+            oReq.open('GET', 'http://cssecommerce.net/birst/WebService1.asmx/botAlert?botName=' + contactName + '&botTask=' + eEmail + '&msg=' + message);
+            oReq.send();
+
+            alert('Message Sent');
+            obj.disabled = 'false';
+        }
+
+        function ReplaceAll(string, search, replace) {
+            return string.split(search).join(replace);
+        }
 
     </script>
 </head>
@@ -454,13 +489,13 @@
                 <h3>Contact Us</h3>
                 <div style="text-align: left; margin: auto; display: inline-block;">
                     Name :<br />
-                    <input type="text" style="width: 300px;" /><br />
+                    <input type="text" style="width: 300px;" id="inpContactName" /><br />
                     Email :<br />
-                    <input type="text" style="width: 300px;" /><br />
+                    <input type="text" style="width: 300px;" id="inpEmail" /><br />
                     Message :<br />
-                    <textarea cols="30" rows="5"></textarea>
+                    <textarea cols="30" rows="5" id="inpMessage"></textarea>
                 </div>
-                <br /><input type="button" value="Send" />
+                <br /><input type="button" value="Send" onclick="SendMessage(this)" />
             </div>
 
             <div class="six columns">
