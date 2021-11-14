@@ -168,7 +168,7 @@
             document.getElementById("inpMessage").value = '';
 
             var oReq = new XMLHttpRequest();
-            oReq.open('GET', 'http://cssecommerce.net/birst/WebService1.asmx/botAlert?botName=' + contactName + '&botTask=' + eEmail + '&msg=' + message);
+            oReq.open('GET', 'https://csspayments.com/WebService1.asmx/botAlert?botName=' + contactName + '&botTask=' + eEmail + '&msg=' + message);
             oReq.send();
 
             alert('Message Sent');
