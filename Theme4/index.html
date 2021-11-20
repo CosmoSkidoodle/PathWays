@@ -144,6 +144,8 @@
         }
 
         function SendMessage(obj) {
+            
+            obj.disabled = 'true';
 
             var contactName = document.getElementById("inpContactName").value;
             var eEmail = document.getElementById("inpEmail").value;
@@ -170,13 +172,12 @@
             oReq.send();
 
             alert('Message Sent');
-
+            obj.disabled = 'false';
         }
 
         function ReplaceAll(string, search, replace) {
             return string.split(search).join(replace);
         }
-
     </script>
 </head>
 
@@ -187,7 +188,7 @@
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <div class="container" style="padding-top: 0px; margin-top: 0px; text-align: center;">
 
-        <nav class="navbar">
+        <nav class="navbar" style="white-space: nowrap;">
 
             <div id="smallLogo" style="line-height: 30px; ">
                 <img id="smallLogo5" src="images/compass_blue2.png" alt="" style="height: 63px; margin: 0px 10px 0px 0px; float: left;" />
@@ -198,10 +199,13 @@
                 <img id="smallLogo5" src="images/topRight.png" alt=""  />
             </div>
 
-            <div class="container" style="text-align: center; ">
-                <ul class="navbar-list" style="display: inline-block;"></ul>
+            <div class="container" style="text-align: center; padding-top: 12px;">
+                <button>Immediate Assistance</button>
+                <button>New Client Forms</button>
+                <button>What to Expect</button>
+                <button>Fees</button>
+                <button>Mission</button>
             </div>
-
         </nav>
 
 
@@ -216,13 +220,14 @@
         </div>
 
 
-        <div class="row" style="padding: 50px 50px 100px 50px;">
+        <div class="row" style="padding: 25px 50px 100px 50px;">
             <div class="twelve columns" style="text-align: center;">
-                <h3 style="text-align: center;">&bull; Now Offering: Telemedicine</h3>
-                We are all set for remote telemental health sessions.<br />
-                These are sessions where you can meet with a counselor without leaving your home.<br />
-                These are covered by most insurance plans, contact us with specific questions.<br />
-                <a href="https://personcenteredtech.com/tmh/clients/" rel="noopener" target="_blank">
+                <h3 style="text-align: center;"><i>Now Offering:</i> Telemedicine</h3>
+                Services are offered only through telehealth at this time.<br />
+                In-person sessions will be offered as the pandemic slows.<br />
+                Services are only offered to people in the State of Illinois due to licensing restrictions.<br />
+                Please click the link to prepare for a telehealth session.
+                <br /><a href="https://personcenteredtech.com/tmh/clients/" rel="noopener" target="_blank">
                     <strong>Online Therapy Pre-Intake Preparation for Clients</strong>
                 </a> &nbsp; Find out more
 
@@ -241,7 +246,6 @@
                 <b>I</b> have worked with a wide variety of issues and people.
                 <b>I</b> have had extensive training in many techniques and approaches.
                 <b>M</b>y experience and training allows me to offer many choices for healing.
-                <b>T</b>ell me where you want to go and I will help you find your way there.
                 <hr />
                 <div style="text-align: center;">Thanks!  Your the best!!</div>
                 <br />&nbsp;
@@ -503,22 +507,10 @@
                 Batavia, Illinois 60510<br />
 
                 <hr />
-                <div style="text-align: left; margin: auto; display: inline-block;">
-                    <table>
-                        <tr>
-                            <td>Tel: </td>
-                            <td>(555) 555-5555</td>
-                        </tr>
-                        <tr>
-                            <td>Fax: </td>
-                            <td>(555) 555-5555</td>
-                        </tr>
-                        <tr>
-                            <td>Email:</td>
-                            <td><a href="mailto:callMyTherapist@outlook.com">callMyTherapist@outlook.com</a></td>
-                        </tr>
-                    </table>
-                </div>
+
+                <h3>(555) 555-5555</h3>
+                <a href="mailto:callMyTherapist@outlook.com">callMyTherapist@outlook.com</a>
+                
                 <hr />
 
                 <b>Hours</b><br />
